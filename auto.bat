@@ -13,5 +13,8 @@ cls
 @REM g++ cons_dest.cpp -o cons_dest
 @REM cons_dest
 
-g++ pointers.cpp -o pointers
-pointers
+@REM g++ pointers.cpp -o pointers
+@REM pointers
+
+g++ dataStructure.cpp -o dataStructure
+dataStructure
