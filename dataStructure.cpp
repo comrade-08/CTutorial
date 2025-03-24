@@ -60,22 +60,43 @@ void stack::display(){
 
 // queue
 
-class queue
-{
-private:
-    /* data */
-public:
-    queue(/* args */);
-    ~queue();
-};
+#include <queue>  // Required for the queue container
 
-queue::queue(/* args */)
-{
+int queueFunc() {
+    // Declare a queue of integers
+    queue<int> q;
+
+    // Enqueue elements (add elements to the queue)
+    q.push(10);
+    q.push(20);
+    q.push(30);
+    q.push(40);
+
+    // Display the front element of the queue
+    cout << "Front of the queue: " << q.front() << endl;
+
+    // Display the size of the queue
+    cout << "Size of the queue: " << q.size() << endl;
+
+    // Dequeue elements (remove elements from the queue)
+    cout << "Dequeuing: " << q.front() << endl;
+    q.pop();  // Removes 10
+
+    cout << "Front of the queue after one pop: " << q.front() << endl;
+
+    // Check if the queue is empty
+    if (q.empty()) {
+        cout << "Queue is empty." << endl;
+    } else {
+        cout << "Queue is not empty." << endl;
+    }
+
+    // Output the size of the queue after some dequeue operations
+    cout << "Size of the queue after popping one element: " << q.size() << endl;
+
+    return 0;
 }
 
-queue::~queue()
-{
-}
 
 
 

@@ -19,5 +19,8 @@ cls
 @REM g++ dataStructure.cpp -o dataStructure
 @REM dataStructure
 
-g++ stack.cpp -o stack
-stack
+@REM g++ stack.cpp -o stack
+@REM stack
+
+g++ queue.cpp -o queue
+queue
