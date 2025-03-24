@@ -16,5 +16,8 @@ cls
 @REM g++ pointers.cpp -o pointers
 @REM pointers
 
-g++ dataStructure.cpp -o dataStructure
-dataStructure
+@REM g++ dataStructure.cpp -o dataStructure
+@REM dataStructure
+
+g++ stack.cpp -o stack
+stack

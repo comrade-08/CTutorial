@@ -86,5 +86,6 @@ int main(){
     s.push(123);
     s.pop();
     s.display();
+    delete &s;
     return 0;
 }
