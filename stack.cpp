@@ -58,12 +58,12 @@ int main()
 {
     stack s;
     cout << "is Empty : " << (bool)s.isEmpty() << endl;
-    s.push(56);
-    s.push(93);
-    s.push(12);
-    s.push(78);
-    s.push(78);
-    s.push(78);
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    s.push(4);
+    s.push(5);
+    s.push(6);
     s.display();
     s.pop();
     s.pop();
