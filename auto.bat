@@ -22,5 +22,8 @@ cls
 @REM g++ stack.cpp -o stack
 @REM stack
 
-g++ queue.cpp -o queue
-queue
+@REM g++ queue.cpp -o queue
+@REM queue
+
+g++ singleLinkedList.cpp -o singleLinkedList
+singleLinkedList
