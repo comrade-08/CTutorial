@@ -1,0 +1,119 @@
+Chapter 5: Spring Boot Configuration
+
+Spring Boot provides a flexible and powerful configuration mechanism that helps developers externalize application settings, manage profiles, and customize behavior without changing code. This makes your application easier to maintain, deploy, and scale.
+
+5.1 Why Configuration Matters
+
+Every real-world application needs configuration — from database settings to security options, port numbers, logging preferences, etc. Hardcoding such values into source code is not practical, especially when deploying across multiple environments like development, testing, and production.
+
+Spring Boot offers a structured and hierarchical way to manage configurations using property files, YAML, environment variables, and more.
+
+5.2 application.properties and application.yml
+
+Spring Boot supports two main formats for configuration files:
+
+1. application.properties (key=value format)
+   Example:
+   server.port=8081
+   spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+
+2. application.yml (YAML format)
+   Example:
+   server:
+     port: 8081
+   spring:
+     datasource:
+       url: jdbc:mysql://localhost:3306/mydb
+
+These files are automatically read from the `src/main/resources` directory.
+
+5.3 Common Configuration Properties
+
+Some frequently used properties include:
+
+- Server Configuration:
+  server.port=8080
+  server.servlet.context-path=/api
+
+- Database Configuration:
+  spring.datasource.url=jdbc:mysql://localhost:3306/db
+  spring.datasource.username=root
+  spring.datasource.password=secret
+
+- JPA/Hibernate:
+  spring.jpa.show-sql=true
+  spring.jpa.hibernate.ddl-auto=update
+
+- Logging:
+  logging.level.org.springframework=INFO
+  logging.file.name=logs/app.log
+
+5.4 Externalized Configuration
+
+Spring Boot allows you to externalize configuration to work across environments:
+
+- Environment Variables
+- Command-Line Arguments
+- OS System Properties
+- Profile-Specific Properties (see next section)
+
+This helps in overriding sensitive or environment-specific values (like database URLs) without changing code.
+
+5.5 Using Spring Profiles
+
+Profiles let you define different configurations for different environments (dev, test, prod).
+
+1. Define profile-specific files:
+   application-dev.properties
+   application-prod.properties
+
+2. Activate a profile in `application.properties`:
+   spring.profiles.active=dev
+
+Or via command-line:
+   java -jar app.jar --spring.profiles.active=prod
+
+3. Each profile file can contain environment-specific settings like DB credentials, ports, etc.
+
+5.6 Accessing Configuration in Code
+
+Use `@Value` or `@ConfigurationProperties` to inject property values into Java classes.
+
+Example using @Value:
+   @Value("${server.port}")
+   private int port;
+
+Example using @ConfigurationProperties:
+   @Component
+   @ConfigurationProperties(prefix = "app")
+   public class AppConfig {
+       private String name;
+       private String version;
+       // getters and setters
+   }
+
+And in application.properties:
+   app.name=MyApp
+   app.version=1.0
+
+5.7 Default Values and Placeholders
+
+You can provide default values for properties like this:
+   @Value("${app.timeout:30}")
+   private int timeout;
+
+This means "use `app.timeout` if available, else use 30".
+
+You can also use placeholders in properties files:
+   spring.application.name=${app.name}
+
+5.8 Disabling Configuration Files
+
+You can disable loading the default application.properties/yml file by setting:
+   spring.config.location=classpath:/custom-config/
+
+5.9 Summary
+
+Spring Boot’s configuration system gives you fine-grained control over how your application behaves in different environments. With support for multiple file formats, external sources, profiles, and automatic injection, you can manage complexity without sacrificing flexibility.
+
+In the next chapter, we’ll look at how to create RESTful web services with Spring Boot.

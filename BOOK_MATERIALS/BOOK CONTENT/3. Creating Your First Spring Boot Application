@@ -1,0 +1,99 @@
+
+Chapter 3: Creating Your First Spring Boot Application
+
+Now that your environment is ready, let’s build your very first Spring Boot application. This chapter will guide you through the steps of creating a simple RESTful web application using Spring Boot.
+
+3.1 What You Will Build
+
+You will create a basic web application that exposes a REST API endpoint. When accessed, this endpoint will return a welcome message.
+
+3.2 Creating the Project
+
+Use Spring Initializr to create a new Spring Boot project.
+
+Steps:
+1. Visit https://start.spring.io
+2. Choose:
+   - Project: Maven
+   - Language: Java
+   - Spring Boot: Latest Stable Version
+3. Fill in the following:
+   - Group: com.example
+   - Artifact: hello
+   - Name: hello
+   - Description: Demo project for Spring Boot
+4. Add dependencies:
+   - Spring Web
+5. Click "Generate", download the zip file, and extract it.
+6. Open the project in your IDE.
+
+3.3 Understanding the Project Structure
+
+Once you open the project, you will see the following structure:
+
+src/
+ └── main/
+     ├── java/
+     │   └── com.example.hello/
+     │       └── HelloApplication.java
+     └── resources/
+         ├── application.properties
+         └── static/
+
+- HelloApplication.java: The main class that starts the Spring Boot application.
+- application.properties: Used for configuration.
+- static/: Place static web resources like HTML, CSS, JS here.
+
+3.4 Writing Your First Controller
+
+Create a new Java class inside `com.example.hello` package:
+
+HelloController.java:
+```java
+package com.example.hello;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, Spring Boot!";
+    }
+}
+```
+
+Explanation:
+- `@RestController`: Marks the class as a REST controller.
+- `@GetMapping("/hello")`: Maps HTTP GET requests to the `sayHello()` method.
+
+3.5 Running the Application
+
+Run the application from your IDE or terminal.
+
+Using terminal:
+```
+./mvnw spring-boot:run
+```
+
+You should see:
+```
+Tomcat started on port(s): 8080
+Started HelloApplication in X.XXX seconds
+```
+
+Visit http://localhost:8080/hello in your browser or Postman, and you’ll see:
+```
+Hello, Spring Boot!
+```
+
+3.6 Summary
+
+In this chapter, you created your first Spring Boot application. You learned how to:
+- Generate a Spring Boot project using Spring Initializr
+- Create a REST controller
+- Run the application and access it via browser
+
+In the next chapter, we’ll dive into core Spring Boot concepts like Dependency Injection and Configuration.

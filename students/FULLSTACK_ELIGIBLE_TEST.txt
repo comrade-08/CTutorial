@@ -1,0 +1,70 @@
+1. What is a variable?
+A) A fixed value
+B) A reserved memory location to store data
+C) A function
+D) A data type
+Correct: B) A reserved memory location to store data
+
+2. Which of these data types can hold decimal values?
+A) int
+B) float
+C) char
+D) boolean
+Correct: B) float
+
+3. Which symbol is commonly used for 'equal to' in comparisons?
+A) =
+B) ==
+C) :=
+D) !=
+Correct: B) ==
+
+4. What is the role of the compiler?
+A) Runs the code directly
+B) Converts high-level code to machine code
+C) Sends data to the internet
+D) Stores variables
+Correct: B) Converts high-level code to machine code
+
+5. Which of the following is used to group multiple values in a single variable?
+A) Integer
+B) Function
+C) Array
+D) Loop
+Correct: C) Array
+
+6. What is the result of 10 % 4?
+A) 2
+B) 3
+C) 4
+D) 0
+Correct: A) 2
+
+
+7. Which of the following is not one of the main principles of Object-Oriented Programming?
+A) Inheritance
+B) Encapsulation
+C) Compilation
+D) Polymorphism
+Correct: C) Compilation
+
+8. What is an object in OOP?
+A) A function
+B) A blueprint
+C) A real-world entity created from a class
+D) A variable
+Correct: C) A real-world entity created from a class
+
+9. What is the primary purpose of a constructor?
+A) Destroy objects
+B) Allocate memory manually
+C) Initialize objects when they are created
+D) Create classes
+Correct: C) Initialize objects when they are created
+
+10. Which OOP concept binds data and functions together and keeps both safe from outside interference?
+A) Abstraction
+B) Inheritance
+C) Polymorphism
+D) Encapsulation
+Correct: D) Encapsulation

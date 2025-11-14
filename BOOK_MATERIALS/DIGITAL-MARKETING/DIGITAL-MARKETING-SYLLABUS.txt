@@ -1,0 +1,107 @@
+DIGITAL MARKETING SYLLABUS
+
+Module 1 — Foundations of Digital Marketing
+
+    1. Evolution of marketing (traditional vs digital)
+    2. funnels
+    3. KPIs
+    4. customer personas
+    5. B2B vs B2C
+    6. campaign planning.
+
+Module 2 — Websites & Landing Pages
+
+    1. Domain
+    2. hosting
+    3. WordPress CMS
+    4. landing page design
+    5. UX/UI basics
+    6. optimization for conversions.
+
+Module 3 — Content Marketing & Copywriting
+
+    1. Content strategy
+    2. calendars
+    3. storytelling
+    4. blogging
+    5. video content,
+    6. short-form content (Reels/Shorts)
+    7. copywriting principles.
+
+Module 4 — SEO (Search Engine Optimization)
+
+    1. Keyword research
+    2. on-page
+    3. off-page
+    4. technical SEO
+    5. backlinks
+    6. tools (GSC, Ahrefs)
+    7. Local SEO & Google Business Profile.
+
+Module 5 — SEM / PPC Advertising
+
+    1. Google Ads (search, display, shopping, video)
+    2. bidding strategies
+    3. budgeting
+    4. performance tracking
+    5. remarketing.
+
+Module 6 — Social Media Marketing
+
+    1. Organic and paid strategies across FB, Insta, LinkedIn, YouTube, X.
+    2. Influencer marketing
+    3. ad targeting
+    4. campaign analytics.
+
+Module 7 — Video & YouTube Marketing
+
+    1. Channel setup
+    2. SEO for videos
+    3. live streaming
+    4. storytelling
+    5. influencer
+    6. collaborations
+    7. analytics.
+
+Module 8 — Email & Affiliate Marketing
+
+    1. Email list building
+    2. campaigns
+    3. automation
+    4. compliance (GDPR/CAN-SPAM)
+    5. Affiliate models (CPS, CPA)
+    6. influencer tie-ins.
+
+Module 9 — Analytics & Conversion Optimization
+
+    1. Google Analytics 4
+    2. dashboards
+    3. funnels
+    4. A/B testing
+    5. heatmaps
+    6. attribution models
+    7. CRO techniques.
+
+Module 10 — E-commerce & Mobile Marketing
+
+    1. Product pages
+    2. cart recovery
+    3. marketplace ads (Amazon, Flipkart)
+    4. mobile-first design
+    5. SMS/WhatsApp campaigns
+    6. App Store Optimization.
+
+Module 11 — AI & Emerging Trends
+
+    1. AI-driven content creation
+    2. predictive analytics
+    3. personalization
+    4. chatbots
+    5. marketing automation tools
+    6. future trends.
+
+Module 12 — Professional Prep & Projects
+
+Hands-on labs: SEO audit, Google Ads campaign, GA4 dashboard, social
+media calendar. Resume prep, mock interviews, freelancing,
+certifications, case studies.

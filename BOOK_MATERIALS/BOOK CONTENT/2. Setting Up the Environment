@@ -1,0 +1,95 @@
+
+Chapter 2: Setting Up the Environment
+
+Before starting with Spring Boot development, it's important to set up your development environment with the necessary tools. This chapter guides you through installing Java, setting up an IDE, and creating and running your first Spring Boot project.
+
+2.1 Prerequisites
+
+To work with Spring Boot, you’ll need the following:
+- Java Development Kit (JDK) – Version 17 or above is recommended.
+- An IDE such as IntelliJ IDEA, Eclipse, or Visual Studio Code.
+- Maven or Gradle – build tools used for managing project dependencies.
+- Internet connection – for downloading libraries and dependencies.
+
+2.2 Installing Java
+
+1. Check if Java is already installed by running `java -version` in your terminal or command prompt.
+2. If not installed, download and install the latest JDK from Oracle (https://www.oracle.com/java/technologies/javase-downloads.html) or OpenJDK (https://jdk.java.net/).
+3. Set the `JAVA_HOME` environment variable and update your system’s PATH.
+
+Windows:
+- Go to System Properties → Environment Variables → Add `JAVA_HOME` with the path to your JDK.
+
+macOS/Linux:
+- Add the following lines to `~/.bashrc`, `~/.zshrc`, or equivalent:
+export JAVA_HOME=/path/to/jdk
+export PATH=$JAVA_HOME/bin:$PATH
+
+2.3 Installing an IDE
+
+You can use any IDE, but the most popular ones for Spring Boot development are:
+
+- IntelliJ IDEA (https://www.jetbrains.com/idea/)
+- Eclipse with Spring Tools (https://spring.io/tools)
+- Visual Studio Code (https://code.visualstudio.com)
+
+Each of these supports Java and Spring Boot, with features like code completion, project templates, and integrated terminals.
+
+2.4 Creating a Spring Boot Project
+
+There are two main ways to create a Spring Boot project:
+
+Option 1: Using Spring Initializr (https://start.spring.io)
+1. Choose:
+   - Project: Maven or Gradle
+   - Language: Java
+   - Spring Boot version: latest stable
+   - Group: com.example
+   - Artifact: demo
+2. Add dependencies (e.g., Spring Web, Spring Data JPA).
+3. Click "Generate", unzip the project, and open it in your IDE.
+
+Option 2: From within your IDE
+- IntelliJ: File → New → Project → Spring Initializr
+- Eclipse: File → New → Spring Starter Project
+
+2.5 Running Your First Application
+
+Once your project is set up, you can run it in your IDE or terminal.
+
+Using terminal:
+./mvnw spring-boot:run    (for Maven)
+./gradlew bootRun         (for Gradle)
+
+If successful, you’ll see output like:
+Tomcat started on port(s): 8080 (http)...
+Started DemoApplication in X.XXX seconds
+
+Visit http://localhost:8080 in your browser. If the page loads without error, your setup is complete.
+
+2.6 Understanding the Project Structure
+
+Typical Spring Boot project layout:
+
+src/
+ └── main/
+     ├── java/
+     │   └── com.example.demo/
+     │       └── DemoApplication.java
+     └── resources/
+         ├── application.properties
+         └── static/
+
+- DemoApplication.java: The main class annotated with @SpringBootApplication.
+- application.properties: The main configuration file.
+- static/: Folder for static assets like HTML, CSS, JS.
+
+Checklist: Is Your Environment Ready?
+- [ ] Java is installed and configured correctly.
+- [ ] An IDE is installed and running.
+- [ ] Spring Boot project created via Spring Initializr or IDE.
+- [ ] Application runs at http://localhost:8080.
+
+Summary
+
+In this chapter, you learned how to install Java, set up your IDE, create a Spring Boot project, and run your first application. This environment will serve as the foundation for building and testing your Spring Boot applications throughout the rest of this book.

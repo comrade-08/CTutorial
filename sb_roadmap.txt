@@ -1,0 +1,126 @@
+SPRING BOOT ROADMAP TO LEARN
+=============================
+
+1. PREREQUISITES
+-----------------
+- Java (Java 8 or newer)
+  - OOP concepts (classes, inheritance, polymorphism)
+  - Exception handling
+  - Collections & Generics
+  - Java Streams & Lambdas
+- Maven or Gradle (build tools)
+- Basic Git
+- IDE (IntelliJ IDEA or Eclipse)
+- Basic SQL and relational database concepts
+
+2. CORE SPRING CONCEPTS (Before Spring Boot)
+---------------------------------------------
+- Spring Framework Basics
+  - Dependency Injection (DI)
+  - Inversion of Control (IoC)
+  - ApplicationContext
+  - Bean Lifecycle
+- Spring Modules
+  - Spring Core
+  - Spring Context
+  - Spring AOP
+  - Spring JDBC / ORM
+
+3. GETTING STARTED WITH SPRING BOOT
+------------------------------------
+- What is Spring Boot?
+- Advantages over Spring
+- Spring Boot vs Spring Framework
+- Creating your first Spring Boot application
+- Tool: https://start.spring.io
+
+4. CORE COMPONENTS OF SPRING BOOT
+----------------------------------
+- Spring Boot Starters
+- Spring Boot Auto-Configuration
+- Application Properties/YAML
+- Spring Boot DevTools
+- Logging with Logback, SLF4J
+
+5. BUILD REST APIs WITH SPRING BOOT
+------------------------------------
+- Spring Web (REST Controller)
+- HTTP methods (GET, POST, PUT, DELETE)
+- Request/Response Mapping (@RequestBody, @PathVariable, @RequestParam)
+- Exception Handling with @ControllerAdvice
+- ResponseEntity and status codes
+- DTOs and Model Mapping
+
+6. DATABASE INTEGRATION
+------------------------
+- Spring Data JPA (with Hibernate)
+- CRUD operations using JpaRepository
+- Entity Relationships (OneToMany, ManyToOne, etc.)
+- H2/In-memory DB for testing
+- Connecting to MySQL/PostgreSQL
+- Database migrations using Flyway or Liquibase
+
+7. SECURITY
+-----------
+- Introduction to Spring Security
+- Basic Authentication
+- Role-based access control
+- JWT (JSON Web Tokens)
+- OAuth2 (optional for advanced)
+
+8. ADVANCED TOPICS
+-------------------
+- Validation using @Valid and @Validated
+- Asynchronous Methods (@Async)
+- Scheduling (@Scheduled)
+- Custom Annotations
+- Lombok for cleaner code
+
+9. TESTING
+-----------
+- Unit Testing with JUnit & Mockito
+- Integration Testing with @SpringBootTest
+- Testing REST APIs using MockMvc
+- Testcontainers (for database testing)
+
+10. DEVOPS & DEPLOYMENT
+------------------------
+- Building JARs/WARs with Maven/Gradle
+- Running on local server (java -jar)
+- Dockerizing Spring Boot apps
+- CI/CD (GitHub Actions, Jenkins)
+- Deploy to Heroku, AWS, or DigitalOcean
+
+11. BEST PRACTICES
+-------------------
+- Layered architecture (Controller, Service, Repository)
+- Use of DTOs & Mappers (MapStruct or manual)
+- Configuration management
+- Environment-specific properties
+- Code quality & readability
+
+12. RESOURCES TO LEARN
+-----------------------
+Books:
+- Spring in Action by Craig Walls
+- Spring Boot in Action by Craig Walls
+
+YouTube Channels:
+- Amigoscode
+- Java Brains
+- Telusko
+
+Online Courses:
+- Spring Boot - Udemy by in28minutes
+- Baeldung Spring Boot Tutorials: https://www.baeldung.com/learn-spring-boot
+
+SUGGESTED LEARNING PATH (WEEKLY)
+---------------------------------
+Week 1: Java & Maven Refresh  
+Week 2: Spring Core Concepts  
+Week 3: Spring Boot Basics & REST APIs  
+Week 4: JPA & Database Integration  
+Week 5: Security & Authentication  
+Week 6: Testing & Advanced Topics  
+Week 7: Docker & Deployment  
+Week 8+: Real-world projects & Interview prep

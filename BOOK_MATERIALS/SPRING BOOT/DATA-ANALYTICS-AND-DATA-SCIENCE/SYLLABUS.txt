@@ -1,0 +1,114 @@
+DATA SCIENCE SYLLABUS
+
+1. Introduction
+- What is Data Science?
+- Data Scientist roles and applications
+- Data Science lifecycle
+
+2. Mathematics & Statistics
+- Linear Algebra (vectors, matrices, eigenvalues)
+- Probability & Distributions
+- Hypothesis Testing, p-values
+- Regression Analysis
+- Statistical Inference
+
+3. Programming for Data Science
+- Python / R basics
+- Libraries: NumPy, Pandas, Scikit-learn
+- Data Manipulation & Cleaning
+
+4. Data Handling
+- Data Wrangling & Preprocessing
+- Handling Missing Values & Outliers
+- Feature Engineering & Scaling
+- Working with structured & unstructured data
+
+5. Data Visualization
+- Matplotlib, Seaborn, Plotly
+- Dashboards (Tableau / Power BI)
+- Storytelling with Data
+
+6. Machine Learning
+- Supervised Learning: Regression, Classification
+- Unsupervised Learning: Clustering, PCA
+- Model Evaluation: Accuracy, Precision, Recall, ROC
+- Ensemble Methods: Random Forest, XGBoost
+
+7. Deep Learning & AI
+- Neural Networks basics
+- TensorFlow / PyTorch
+- CNNs for Image Processing
+- RNNs & LSTMs for Sequence Data
+- NLP basics (sentiment analysis, embeddings)
+
+8. Big Data & Cloud
+- Hadoop / Spark Basics
+- Cloud Platforms (AWS, GCP, Azure)
+- Data Pipelines (Airflow, Kafka basics)
+
+9. Deployment & Tools
+- Model Deployment with Flask/FastAPI
+- MLOps Basics
+- Docker & Kubernetes for ML
+
+10. Capstone Projects
+- Predictive Analytics (e.g., sales forecasting)
+- NLP project (sentiment analysis/chatbot)
+- Computer Vision project (image classification)
+
+
+DATA ANALYTICS SYLLABUS
+
+1. Introduction
+- What is Data Analytics?
+- Types: Descriptive, Diagnostic, Predictive, Prescriptive
+- Difference between Data Analyst & Data Scientist
+
+2. Excel & Spreadsheets
+- Advanced Excel Functions
+- Pivot Tables, Charts
+- Data Cleaning in Excel
+
+3. Statistics for Analytics
+- Descriptive Statistics (mean, median, mode)
+- Probability basics
+- Hypothesis Testing
+- Correlation & Regression
+
+4. SQL & Databases
+- SQL Basics: SELECT, WHERE, GROUP BY
+- Joins & Subqueries
+- Data Extraction & Manipulation
+- Connecting SQL with Python / BI tools
+
+5. Data Visualization
+- Tableau Basics
+- Power BI for Dashboards
+- Data Storytelling & Presentation Skills
+
+6. Python / R for Analytics
+- Data Manipulation with Pandas
+- Data Cleaning & Transformation
+- Exploratory Data Analysis (EDA)
+
+7. Business Analytics
+- KPI, Metrics, Business Dashboards
+- Market Basket Analysis
+- Customer Segmentation
+- Time Series Forecasting (basic)
+
+8. Reporting & Communication
+- Creating Business Reports
+- Automating Reports with Python/Excel
+- Presenting Insights
+
+9. Tools & Platforms
+- Excel
+- SQL
+- Tableau / Power BI
+- Python/R (basic analytics libraries)
+
+10. Capstone Projects
+- Sales Dashboard (Excel/Power BI)
+- Customer Segmentation using SQL + Visualization
+- Market Trends Analysis

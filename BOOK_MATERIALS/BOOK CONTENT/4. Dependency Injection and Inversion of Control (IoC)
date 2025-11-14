@@ -1,0 +1,122 @@
+Chapter 4: Dependency Injection and Inversion of Control (IoC)
+
+One of the core features that makes Spring so powerful and popular is its support for Dependency Injection (DI) and Inversion of Control (IoC). These design principles are key to writing modular, testable, and maintainable applications.
+
+4.1 What is Inversion of Control (IoC)?
+
+In traditional programming, the application code controls the flow of execution and object creation. With Inversion of Control, the control is inverted — meaning the framework (Spring) is responsible for managing object creation and lifecycle.
+
+In short, IoC means giving the control of creating and managing objects to the Spring container instead of doing it manually.
+
+4.2 What is Dependency Injection?
+
+Dependency Injection is a design pattern where objects are provided with their dependencies instead of creating them directly. In Spring, this is done automatically by the IoC container.
+
+For example, instead of doing:
+Service service = new Service();
+
+Spring will inject it for you:
+@Autowired
+private Service service;
+
+4.3 Types of Dependency Injection in Spring
+
+Spring supports three main types of DI:
+
+1. Constructor Injection
+   Dependencies are passed as arguments to the constructor.
+
+   public class Car {
+       private Engine engine;
+       public Car(Engine engine) {
+           this.engine = engine;
+       }
+   }
+
+2. Setter Injection
+   Dependencies are set using setter methods.
+
+   public class Car {
+       private Engine engine;
+       @Autowired
+       public void setEngine(Engine engine) {
+           this.engine = engine;
+       }
+   }
+
+3. Field Injection
+   Dependencies are injected directly into the fields.
+
+   public class Car {
+       @Autowired
+       private Engine engine;
+   }
+
+Note: Constructor Injection is generally recommended for mandatory dependencies.
+
+4.4 Spring IoC Container
+
+The Spring IoC container is responsible for:
+- Instantiating beans (objects)
+- Configuring them
+- Managing their lifecycle
+- Injecting dependencies
+
+There are two main types of containers:
+- BeanFactory – Basic container, used rarely
+- ApplicationContext – More advanced, used commonly in Spring Boot
+
+4.5 Defining Beans in Spring
+
+Beans are objects that are managed by the Spring container. They can be defined using:
+
+Annotations (Recommended)
+
+@Component
+public class MyBean { }
+
+@Service
+public class MyService { }
+
+@Repository
+public class MyRepository { }
+
+XML Configuration (Legacy)
+
+<bean id="myBean" class="com.example.MyBean"/>
+
+4.6 Example: Using DI in Spring Boot
+
+@Service
+public class GreetingService {
+    public String getMessage() {
+        return "Hello from GreetingService!";
+    }
+}
+
+@RestController
+public class GreetingController {
+    private final GreetingService service;
+
+    @Autowired
+    public GreetingController(GreetingService service) {
+        this.service = service;
+    }
+
+    @GetMapping("/greet")
+    public String greet() {
+        return service.getMessage();
+    }
+}
+
+4.7 Benefits of Using DI and IoC
+
+- Loose coupling between components
+- Easier unit testing
+- Better code readability and maintenance
+- Fewer boilerplate code
+- Centralized configuration and object management
+
+4.8 Summary
+
+In this chapter, you learned about the concepts of Inversion of Control and Dependency Injection in Spring. These are foundational principles that allow Spring to manage object lifecycles and inject dependencies automatically. In the next chapter, we’ll explore Spring Boot’s powerful configuration system and how it simplifies application setup.
